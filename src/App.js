@@ -56,7 +56,12 @@ function App() {
 
         <h2>2. Github Pages</h2>
         <p>Free hosting, good enough for most projects.</p>
-        <p>You will need a Github account.</p>
+        <p>You will need a Github account and a repo with your app's code.</p>
+        <pre>git init .</pre>
+        <pre>git add .</pre>
+        <pre>git commit -m "Initial commit"</pre>
+        <pre>git remote add origin git@github.com:username/repo.git</pre>
+        <pre>git push -u origin master</pre>
       </main>
     </div>
   );
