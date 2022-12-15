@@ -38,7 +38,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://discodancer.net/digit",
+  "homepage": "http://skid.github.io/digit-pres",
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }

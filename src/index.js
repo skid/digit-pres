@@ -17,7 +17,7 @@ const router = createBrowserRouter(
       element: <Page />,
     },
   ],
-  { basename: "/digit" }
+  { basename: "/digit-pres" }
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

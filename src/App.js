@@ -62,6 +62,8 @@ function App() {
         <pre>git commit -m "Initial commit"</pre>
         <pre>git remote add origin git@github.com:username/repo.git</pre>
         <pre>git push -u origin master</pre>
+
+        <p>Create a github </p>
       </main>
     </div>
   );
