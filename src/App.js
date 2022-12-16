@@ -36,7 +36,7 @@ function App() {
         </ul>
         <p>Then just copy your folder over to a path inside the server's root directory.</p>
 
-        <pre>scp -r build/ user@server:/var/www/html</pre>
+        <pre>scp -r build/ user@server:/var/www/html/digit-pres</pre>
 
         <p>
           If you're building a SPA, configure your routes. For example, this is <Link to="/page">another page</Link>.
@@ -46,9 +46,9 @@ function App() {
           the trick:
         </p>
         <pre>
-          location / {"{"}
+          location /digit-pres {"{"}
           <br />
-          try_files $uri $uri/ /index.html;
+          {"  "}try_files $uri $uri/ /index.html;
           <br />
           {"}"}
           <br />
@@ -63,7 +63,52 @@ function App() {
         <pre>git remote add origin git@github.com:username/repo.git</pre>
         <pre>git push -u origin master</pre>
 
-        <p>Create a github </p>
+        <p>
+          Install the <code>gh-pages</code> package as a dev dependency
+        </p>
+        <pre>npm install gh-pages --save-dev</pre>
+
+        <p>
+          Add the following to your <code>package.json</code> file:
+        </p>
+        <pre>
+          {"{"}
+          <br />
+          {"  "}"homepage": "https://username.github.io/repo",
+          <br />
+          {"  "}"scripts": {"{"}
+          <br />
+          {"    "}"predeploy": "npm run build",
+          <br />
+          {"    "}"deploy": "gh-pages -d build",
+          <br />
+          {"  "}
+          {"}"}
+          <br />
+          {"}"}
+          <br />
+        </pre>
+
+        <p>
+          For SPAs make sure you redirect to your index.html file. On Github Pages, add a <code>_redirects</code> file
+          to your <code>public</code> directory with the following line:
+        </p>
+        <pre>{"/"}* /index.html 200</pre>
+
+        <p>Then deploy:</p>
+        <pre>npm run deploy</pre>
+
+        <h2>Other Options</h2>
+        <p>There are many:</p>
+        <ul>
+          <li>Netlify</li>
+          <li>Vercel (Next.js)</li>
+          <li>Firebase</li>
+        </ul>
+
+        <h2>Do you need a backend?</h2>
+        <p>Most React applications fetch data via an API, so they are purely frontend.</p>
+        <p>But if your app has a backend, it can also serve your html/js</p>
       </main>
     </div>
   );
