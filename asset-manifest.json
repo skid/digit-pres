@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/digit-pres/static/css/main.03290e17.css",
-    "main.js": "/digit-pres/static/js/main.c1fa28c8.js",
+    "main.js": "/digit-pres/static/js/main.2a978214.js",
     "static/js/787.b44f3440.chunk.js": "/digit-pres/static/js/787.b44f3440.chunk.js",
     "index.html": "/digit-pres/index.html",
     "main.03290e17.css.map": "/digit-pres/static/css/main.03290e17.css.map",
-    "main.c1fa28c8.js.map": "/digit-pres/static/js/main.c1fa28c8.js.map",
+    "main.2a978214.js.map": "/digit-pres/static/js/main.2a978214.js.map",
     "787.b44f3440.chunk.js.map": "/digit-pres/static/js/787.b44f3440.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.03290e17.css",
-    "static/js/main.c1fa28c8.js"
+    "static/js/main.2a978214.js"
   ]
 }
