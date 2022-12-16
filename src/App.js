@@ -8,7 +8,7 @@ function App() {
         <h1>Deploying a React App</h1>
       </header>
       <main>
-        <h2>Create the app</h2>
+        <h2>Create the app!</h2>
 
         <pre>npx create-react-app digit</pre>
         <pre>code digit</pre>
@@ -109,6 +109,7 @@ function App() {
         <h2>Do you need a backend?</h2>
         <p>Most React applications fetch data via an API, so they are purely frontend.</p>
         <p>But if your app has a backend, it can also serve your html/js</p>
+        <p>A word on SSR</p>
       </main>
     </div>
   );
